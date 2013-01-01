@@ -1,0 +1,100 @@
+@font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
+
+/* @group css reset v2.0 */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,details,embed,figure,figcaption,footer,header,hgroup,nav,output,section,summary,time,audio,video{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+/* @end */
+
+/* fromthepub.com CSS */
+
+body {max-width: 1200px;color: #333; -webkit-font-smoothing: antialiased;font: 16px/1.5 leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: auto;padding: 0;}
+
+a {text-decoration: none;color: #3a3c44;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;color: #949EA3;-webkit-transition: color .25s}
+
+header {
+background: url(bg.jpg)50% no-repeat;
+margin: 40px auto;
+}
+
+header h1 {
+	color: #f69013;
+	font-size: 100px;
+	line-height: 0;
+	text-shadow: 0 1px 2px black;
+	padding: 100px 0 55px 30px;
+}
+
+header p {
+	color: #f69013;
+	font-size: 40px;
+	line-height: 10px;
+	text-shadow: 0 1px 2px black;
+	padding: 0 0 100px 30px;
+}
+
+nav {
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+	border-bottom-color: rgba(105, 105, 105, 0.41);
+	border-top-color: rgba(105, 105, 105, 0.41);
+	max-width: 900px;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0 auto 40px;
+}
+
+nav li {
+	display: inline;
+	font-size: 25px;
+	line-height: 30px;
+	padding: 0 10px;
+}
+
+nav a,a:visited {color: rgba(105, 105, 105, 0.41);}
+nav a:hover {color: rgb(105, 105, 105);}
+
+section.episodecontainer {
+max-width: 900px;
+margin: 0 auto;
+}
+
+article.episode {
+	max-width: 270px;
+	display: inline-block;
+	font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin: 0 10px 0 18px;
+	height: 200px;
+}
+
+article.episode h1 {
+	font-weight: bold;
+	margin: 0 0 5px;
+}
+
+article.episode  p.meta {
+	font-size: 10px;
+	display: inline;
+}
+
+footer {
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-top-width: 1px;
+	border-bottom-color: rgba(105, 105, 105, 0.41);
+	border-top-color: rgba(105, 105, 105, 0.41);
+	max-width: 900px;
+	text-align: center;
+	padding: 10px 0;
+	margin: 100px auto 40px;
+}
+
+footer p {
+	display: inline;
+	padding: 0 10px;
+	font: 12px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* 320-pixel layout for iPhone-sized screens */
+@media (max-width: 320px) {article.episode {width: 320px;margin: 0 0 18px 18px;}header h1 {font-size: 60px;}}
