@@ -1,0 +1,12 @@
+{% include header.html %}
+
+<article class="photo">
+<h1><a href="http://log.adamwilcox.org{{ page.url }}" rel="bookmark" title="Permanent Link to {{ page.title }}">{{ page.title }}</a></h1>
+
+{{ content }}
+
+<footer><a href="http://log.adamwilcox.org{{ page.url }}" rel="bookmark" title="Permanent Link to {{ page.title }}"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %d, %Y" }}</time></a></footer>
+
+</article>
+
+{% include footer.html %}

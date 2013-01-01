@@ -1,0 +1,10 @@
+auto: true
+server: true
+server_port: 3000
+pygments: true
+safe: false
+lsi: false
+url: http://www.fromthepub.com
++domain: fromthepub.com
+
+permalink: /:year/:month/:day/:title
