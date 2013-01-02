@@ -2,19 +2,16 @@
 layout: default
 title:
 ---
+<section class="episodecontainer">
 
 {% for post in site.posts limit:5 %}
-<article class="{{post.layout}}">
 
-<h1><a href="http://adamwilcox.github.com/fromthepub/{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}} &bull; </a></h1>
-
+<article class="episode">
+<h1><a href="http://adamwilcox.github.com/fromthepub/{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}} &bull; <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time></a></h1>
 {{ post.content }}
-
-<a href="http://log.adamwilcox.org{{ post.url }}" rel="bookmark" title="Permanent Link to {{ page.title }}"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time></a>
-
+<p class="meta"><a href="http://adamwilcox.github.com/fromthepub/{{ post.url }}" rel="bookmark" title="Download {{ post.title }}">Download {{ post.link }}</a> &bull; Subscribe in iTunes</p>
 </article>
+
 {% endfor %}
 
-<article>
-<a href="/archive">&larr; Browse older posts in the archive</a>
-</article>
+</section>
