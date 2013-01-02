@@ -6,15 +6,11 @@ title:
 {% for post in site.posts limit:5 %}
 <article class="{{post.layout}}">
 
-{% if post.link %}
-<h1><a href="{{ post.link }}" rel="bookmark" title="Go to {{ post.link }}">{{ post.title }}</a> &rarr;</h1>
-{% else %}
-<h1><a href="http://log.adamwilcox.org{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}}</a></h1>
-{% endif %}
+<h1><a href="http://adamwilcox.github.com/fromthepub/{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}} &bull; </a></h1>
 
 {{ post.content }}
 
-<footer><a href="http://log.adamwilcox.org{{ post.url }}" rel="bookmark" title="Permanent Link to {{ page.title }}"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time></a></footer>
+<a href="http://log.adamwilcox.org{{ post.url }}" rel="bookmark" title="Permanent Link to {{ page.title }}"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time></a>
 
 </article>
 {% endfor %}
