@@ -1,5 +1,3 @@
-/* @override http://www.fromthepub.com/assets/style.css */
-
 @font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
 
 /* @group css reset v2.0 */
@@ -54,7 +52,8 @@ nav li {
 	padding: 0 10px;
 }
 
-nav a,a:visited {color: rgba(105, 105, 105, 0.41);}
+nav a {color: rgba(105, 105, 105, 0.41);}
+nav a:visited {color: rgba(105, 105, 105, 0.41);}
 nav a:hover {color: rgb(105, 105, 105);}
 
 section.episodecontainer {max-width: 900px;margin: 0 auto;}
@@ -68,7 +67,16 @@ article.episode {
 
 article.episode h1 {font-weight: bold;margin: 0 0 5px;}
 article.episode h2 {font-weight: bold;padding: 10px 0 0;}
-article.episode  p.meta {font-size: 10px;display: inline;}
+article.episode p.meta {font-size: 10px;display: inline;}
+
+article.page {max-width: 900px;margin: 0 auto;}
+article.page h1 {font: 50px/0 leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 50px 0 40px;}
+article.page h2 {font: 30px/0 leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 50px 0 40px;}
+article.page p {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 10px;}
+
+article.page a {text-decoration: none;color: #f69013;}
+article.page a:visited {text-decoration: none;}
+article.page a:hover {text-decoration: none;color: #f68512;-webkit-transition: color .25s}
 
 footer {
 	border-style: solid;
