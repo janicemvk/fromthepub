@@ -12,13 +12,15 @@ layout: nil
 
 <link>http://www.fromthepub.com/</link>
 
-<language>en-us</language>
+<language>en</language>
 
 <copyright>&#xA9; 2013 Adam Wilcox &amp; Darren Scott</copyright>
 
 <itunes:subtitle>a podcast from men who should know better</itunes:subtitle>
 
 <itunes:author>Adam Wilcox &amp; Darren Scott</itunes:author>
+
+ <itunes:keywords>uk,comedy,pub,news,talk,technology,web,adam,wilcox,darren,scott,radio,mix,96,eagle,radio</itunes:keywords>
 
 <itunes:summary>A podcast from Darren Scott and Adam Wilcox on all the things men talk about in the pub- news, films, computer games, Nazi Zombies, aliens and more.</itunes:summary>
 
@@ -34,13 +36,13 @@ layout: nil
 
 <itunes:image href="http://pubpodcast.s3.amazonaws.com/albumart.jpg" />
 
-<itunes:category text="Technology">
+<itunes:category text="Technology" />
 
-<itunes:category text="Comedy">
+<itunes:category text="Comedy" />
 
-<itunes:category text="TV &amp; Film">
+<itunes:category text="TV &amp; Film" />
 
-<itunes:category text="Society &amp; Culture">
+<itunes:category text="Society &amp; Culture" />
 
  {% for post in site.posts limit:10 %}
  
@@ -56,13 +58,13 @@ layout: nil
  
  <itunes:image href="http://pubpodcast.s3.amazonaws.com/albumart.jpg" />
  
- <enclosure url="http://example.com/podcasts/everything/AllAboutEverythingEpisode3.m4a" length="8727310" type="audio/x-m4a" />
+ <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
  
  <guid>{{ post.link }}</guid>
  
  <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
  
- <itunes:duration>{{ post.length }}</itunes:duration>
+ <itunes:duration>{{ post.duration }}</itunes:duration>
  
  <itunes:keywords>uk,comedy,pub,news,talk,technology,web,adamwilcox,darrenscott,radio,mix96,eagleradio</itunes:keywords>
  
