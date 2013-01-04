@@ -1,3 +1,5 @@
+/* @override http://www.fromthepub.com/assets/style.css */
+
 @font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
 
 /* @group css reset v2.0 */
@@ -55,28 +57,18 @@ nav li {
 nav a,a:visited {color: rgba(105, 105, 105, 0.41);}
 nav a:hover {color: rgb(105, 105, 105);}
 
-section.episodecontainer {
-max-width: 900px;
-margin: 0 auto;
-}
+section.episodecontainer {max-width: 900px;margin: 0 auto;}
 
 article.episode {
 	max-width: 270px;
 	display: inline-block;
 	font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin: 0 10px 0 18px;
-	height: 200px;
+	margin: 0 10px 50px 18px;
 }
 
-article.episode h1 {
-	font-weight: bold;
-	margin: 0 0 5px;
-}
-
-article.episode  p.meta {
-	font-size: 10px;
-	display: inline;
-}
+article.episode h1 {font-weight: bold;margin: 0 0 5px;}
+article.episode h2 {font-weight: bold;padding: 10px 0 0;}
+article.episode  p.meta {font-size: 10px;display: inline;}
 
 footer {
 	border-style: solid;
