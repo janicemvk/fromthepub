@@ -62,7 +62,7 @@ layout: nil
  
  <guid>{{ post.link }}</guid>
  
- <pubDate>{{ post.date | date: "%r" }}</pubDate>
+ <pubDate>{{ post.date | date: "%c" }}</pubDate>
  
  <itunes:duration>{{ post.duration }}</itunes:duration>
  
