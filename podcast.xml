@@ -54,7 +54,7 @@ layout: nil
  
  <itunes:subtitle>Darren Scott and Adam Wilcox discuss stuff and drink.</itunes:subtitle>
  
- <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+ <itunes:summary>{{ post.content | cgi_escape }}</itunes:summary>
  
  <itunes:image href="http://www.fromthepub.com/assets/itunes.jpg" />
  
