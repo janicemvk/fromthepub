@@ -10,7 +10,7 @@
 {% unless post.draft %}
 
 <article class="episode">
-<a href="http://www.fromthepub.com{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}}</h1>
+<h1><a href="http://www.fromthepub.com{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}}</h1>
 <p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> • <a href="{{ post.link }}" rel="bookmark" title="Download {{ post.title }}">Download</a> • <a href="https://itunes.apple.com/gb/podcast/from-the-pub-podcast/id336250525?mt=2">Subscribe in iTunes</a></p>
 </article>
 
