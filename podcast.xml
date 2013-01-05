@@ -52,9 +52,9 @@ layout: nil
  
  <itunes:author>Darren Scott &amp; Adam Wilcox</itunes:author>
  
- <itunes:subtitle>Darren Scott and Adam Wilcox discuss stuff and drink.</itunes:subtitle>
+ <itunes:subtitle>{{ post.content | xml_escape }}</itunes:subtitle>
  
- <itunes:summary>{{ post.content | cgi_escape }}</itunes:summary>
+ <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
  
  <itunes:image href="http://www.fromthepub.com/assets/itunes.jpg" />
  
@@ -64,7 +64,7 @@ layout: nil
  
  <pubDate>{{ post.date | date: "%c" }}</pubDate>
  
- <itunes:duration>{{ post.duration }}</itunes:duration>
+ <itunes:duration>{{ post.duration | xml_escape }}</itunes:duration>
  
  <itunes:keywords>uk,comedy,pub,news,talk,technology,web,adam,wilcox,darren,scott,radio,mix96,eagle,radio</itunes:keywords>
  
