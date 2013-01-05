@@ -54,6 +54,8 @@ nav a:visited {color: rgba(105, 105, 105, 0.41);}
 nav a:hover {color: rgb(105, 105, 105);}
 
 section.homepage {max-width: 900px;margin: 0 auto;}
+section.homepage h1 {font: 50px/50px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+
 article.about {max-width: 350px;float: right;margin: 0 10px 0 0;}
 
 article.episode {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 20px 0 0 30px;}
