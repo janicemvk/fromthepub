@@ -2,16 +2,24 @@
 layout: default
 title: Homepage
 ---
-<section class="episodecontainer">
+<section class="homepage">
+
+<article class="about">
+<h1>About The Podcast</h1>
+<p>Darren Scott and Adam Wilcox discuss the things men talk about in the pub- news, films, computer games, Nazi Zombies, women and other aliens.</p>
+</article>
 
 {% for post in site.posts limit:5 %}
 
 <article class="episode">
-<h1><a href="http://www.fromthepub.com{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}} &bull; <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time></a></h1>
-{{ post.content | before_fold }}
-<p class="meta"><a href="{{ post.link }}" rel="bookmark" title="Download {{ post.title }}">Download</a> &bull; <a href="https://itunes.apple.com/gb/podcast/from-the-pub-podcast/id336250525?mt=2">Subscribe in iTunes</a></p>
+<a href="http://www.fromthepub.com{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}}</h1>
+<p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> • <a href="{{ post.link }}" rel="bookmark" title="Download {{ post.title }}">Download</a> • <a href="https://itunes.apple.com/gb/podcast/from-the-pub-podcast/id336250525?mt=2">Subscribe in iTunes</a></p>
 </article>
 
 {% endfor %}
+
+<article class="episode">
+<p>&#8592; Previous Episodes</p>
+</article>
 
 </section>

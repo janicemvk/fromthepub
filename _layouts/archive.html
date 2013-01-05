@@ -9,21 +9,13 @@
 {% for post in site.posts %}
 {% unless post.draft %}
 
-{% capture cmonth %}{{ post.date | date: "%B" }}{% endcapture %}
-				{% unless lmonth == cmonth %}
-				{% unless forloop.first %}</ul>{% endunless %}
-				<h2>{{ cmonth }} {{ post.date | date: "%Y" }}</h2>
-				<ul class="archivelist">
-				{% assign lmonth = cmonth %}
-				{% endunless %}	
-				  	{% if post.link %}
-				  	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-					{% else %}
-					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-					{% endif %}
-			{% endunless %}
-			{% endfor %}
-			</ul>
+<article class="episode">
+<a href="http://www.fromthepub.com{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}}</h1>
+<p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> • <a href="{{ post.link }}" rel="bookmark" title="Download {{ post.title }}">Download</a> • <a href="https://itunes.apple.com/gb/podcast/from-the-pub-podcast/id336250525?mt=2">Subscribe in iTunes</a></p>
+</article>
+
+{% endunless %}
+{% endfor %}
 
 </article>
 
