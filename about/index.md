@@ -9,9 +9,11 @@ From The Pub is a free podcast from Darren Scott and Adam Wilcox. Each episode w
 
 [Darren Scott](http://www.darrenscottshow.com/) is a somewhat more rotund radio professional who talks into a microphone five days a week. He loves films and drives a plastic car held together by masking tape.
 
+Main Image by [ccpixel](http://www.flickr.com/photos/ccpixel/4564301168/).
+
 
 ## Subscribe
 
 You can subscribe for free and listen to every episode via [iTunes](http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=336250525).
 
-You strange non-iTunes using people are not left out in the cold, (although we'll look at you funny), we also provide a [normal RSS feed](http://feeds2.feedburner.com/fromthepub) which works in all kinds of podcatchers.
+You strange non-iTunes using people are not left out in the cold, (although we'll look at you funny), we also provide a [normal RSS feed](http://www.fromthepub.com/podcast.xml) which works in all kinds of podcatchers.

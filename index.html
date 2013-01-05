@@ -8,7 +8,7 @@ title: Homepage
 
 <article class="episode">
 <h1><a href="http://www.fromthepub.com{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}} &bull; <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time></a></h1>
-{{ post.content }}
+{{ post.content | before_fold }}
 <p class="meta"><a href="{{ post.link }}" rel="bookmark" title="Download {{ post.title }}">Download</a> &bull; <a href="https://itunes.apple.com/gb/podcast/from-the-pub-podcast/id336250525?mt=2">Subscribe in iTunes</a></p>
 </article>
 
