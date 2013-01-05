@@ -1,12 +1,11 @@
 {% include header.html %}
 
-<article class="link">
-<h1><a href="{{ page.link }}" rel="bookmark" title="Outside Link to {{ page.title }}">{{ page.title }}</a> &rarr;</h1>
+<article class="page">
+<h1>{{ page.title }}</h1>
 
 {{ content }}
 
-<footer><a href="http://log.adamwilcox.org{{ page.url }}" rel="bookmark" title="Permanent Link to {{ page.title }}"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %d, %Y" }}</time></a></footer>
-
+<p class="meta"><a href="{{ post.link }}" rel="bookmark" title="Download {{ post.title }}">Download</a> &bull; <a href="https://itunes.apple.com/gb/podcast/from-the-pub-podcast/id336250525?mt=2">Subscribe in iTunes</a></p>
 </article>
 
 {% include footer.html %}
