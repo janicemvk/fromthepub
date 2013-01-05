@@ -64,7 +64,7 @@ layout: nil
  
  <pubDate>{{ post.date | date: "%c" }}</pubDate>
  
- <itunes:duration>{{ post.duration | raw }}</itunes:duration>
+ <itunes:duration>{{ post.duration }}</itunes:duration>
  
  <itunes:keywords>uk,comedy,pub,news,talk,technology,web,adam,wilcox,darren,scott,radio,mix96,eagle,radio</itunes:keywords>
  
