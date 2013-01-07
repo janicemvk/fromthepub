@@ -14,7 +14,7 @@ layout: nil
 
 <language>en</language>
 
-<copyright>&#xA9; 2013 Adam Wilcox &amp; Darren Scott</copyright>
+<copyright>&#xA9; 2013 Darren Scott &amp; Adam Wilcox</copyright>
 
 <itunes:subtitle>Darren Scott and Adam Wilcox discuss stuff and drink.</itunes:subtitle>
 
@@ -36,13 +36,15 @@ layout: nil
 
 <itunes:image href="http://www.fromthepub.com/assets/itunes.jpg" />
 
-<itunes:category text="Technology" />
-
 <itunes:category text="Comedy" />
+
+<itunes:category text="Society &amp; Culture" />
+
+<itunes:category text="Technology" />
 
 <itunes:category text="TV &amp; Film" />
 
-<itunes:category text="Society &amp; Culture" />
+<itunes:new-feed-url>http://www.fromthepub.com/podcast.xml</itunes:new-feed-url>
 
  {% for post in site.posts limit:10 %}
  
