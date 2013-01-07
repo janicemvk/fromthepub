@@ -1,0 +1,79 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
+<channel>
+
+<title>From The Pub</title>
+
+<link>http://www.fromthepub.com/</link>
+
+<language>en</language>
+
+<copyright>&#xA9; 2013 Adam Wilcox &amp; Darren Scott</copyright>
+
+<itunes:subtitle>Darren Scott and Adam Wilcox discuss stuff and drink.</itunes:subtitle>
+
+<itunes:author>Adam Wilcox &amp; Darren Scott</itunes:author>
+
+<itunes:keywords>uk,comedy,pub,news,talk,technology,web,adam,wilcox,darren,scott,radio,mix,96,eagle,radio</itunes:keywords>
+
+<itunes:summary>NEW SEASON COMING JAN 2013. A podcast from Darren Scott and Adam Wilcox on all the things men talk about in the pub; news, films, computer games, Nazi Zombies, women and other aliens.</itunes:summary>
+
+<description>NEW SEASON COMING JAN 2013. A podcast from Darren Scott and Adam Wilcox on all the things men talk about in the pub; news, films, computer games, Nazi Zombies, women and other aliens.</description>
+
+<itunes:owner>
+
+<itunes:name>Adam Wilcox</itunes:name>
+
+<itunes:email>fromthepub@adamwilcox.org</itunes:email>
+
+</itunes:owner>
+
+<itunes:image href="http://www.fromthepub.com/assets/itunes.jpg" />
+
+<itunes:category text="Technology" />
+
+<itunes:category text="Comedy" />
+
+<itunes:category text="TV &amp; Film" />
+
+<itunes:category text="Society &amp; Culture" />
+
+<itunes:new-feed-url>http://www.fromthepub.com/podcast.xml</itunes:new-feed-url>
+
+ {% for post in site.posts limit:10 %}
+ 
+ <item>
+ 
+ <title>{{ post.title }}</title>
+ 
+ <itunes:author>Darren Scott &amp; Adam Wilcox</itunes:author>
+ 
+ <itunes:subtitle>From The Pub: {{ post.title }}</itunes:subtitle>
+ 
+ <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+ 
+ <itunes:image href="http://www.fromthepub.com/assets/itunes.jpg" />
+ 
+ <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/x-m4a" />
+ 
+ <guid>{{ post.link }}</guid>
+ 
+ <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
+ 
+ <itunes:duration>{{ post.duration }}</itunes:duration>
+ 
+ <itunes:keywords>uk,comedy,pub,news,talk,technology,web,adam,wilcox,darren,scott,radio,mix96,eagle,radio</itunes:keywords>
+ 
+ </item>
+
+ {% endfor %}
+
+</channel>
+
+</rss>
