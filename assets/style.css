@@ -97,8 +97,8 @@ footer p {
 
 /* 320-pixel layout for iPhone-sized screens */
 @media (max-width: 320px) {
-section.page {width: 319px;}
-article.episode {width: 319px;margin: 0 0 18px;clear: both;}
+section.page {width: 300px;}
+article.episode {width: 300px;margin: 0 0 18px;clear: both;}
 article.episode p.meta {font-size: 12px;line-height: 12px;}
 header h1 {font-size: 60px;}aside {float: none;}
 }
