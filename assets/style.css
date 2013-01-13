@@ -1,4 +1,4 @@
-/* Last Update: 2013-01-13 13:14*/
+/* Last Update: 2013-01-13 13:21*/
 
 @font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
 
@@ -95,6 +95,8 @@ footer p {
 }
 
 /* 320-pixel layout for iPhone-sized screens */
-@media (max-width: 320px) {article.episode {width: 319px;margin: 0 0 18px;clear: both;
-		color: #0bee1a;
-	}header h1 {font-size: 60px;}aside {float: none;}}
+@media (max-width: 320px) {
+article.episode {width: 319px;margin: 0 0 18px;clear: both;}
+article.episode p.meta {font-size: 12px;line-height: 12px;}
+header h1 {font-size: 60px;}aside {float: none;}
+}
