@@ -1,4 +1,4 @@
-/* Last Update: 2013-01-13 11:45*/
+/* Last Update: 2013-01-13 12:03*/
 
 @font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
 
@@ -55,8 +55,8 @@ nav a {color: rgba(105, 105, 105, 0.41);}
 nav a:visited {color: rgba(105, 105, 105, 0.41);}
 nav a:hover {color: rgb(105, 105, 105);}
 
-section.homepage {max-width: 900px;margin: 0 auto;padding: 10px;}
-section.homepage h1 {font: 50px/50px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+section.page {max-width: 900px;margin: 0 auto;padding: 10px;}
+section.page h1 {font: 50px/50px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 0 0 30px;}
 
 article.about {max-width: 350px;float: right;margin: 0;}
 
@@ -96,4 +96,4 @@ footer p {
 }
 
 /* 320-pixel layout for iPhone-sized screens */
-@media (max-width: 320px) {article.episode {width: 320px;margin: 0 0 18px;clear: both;}header h1 {font-size: 60px;}article.about {float: none;}}
+@media (max-width: 320px) {article.episode {width: 320px;margin: 0 0 18px;clear: both;}header h1 {font-size: 60px;}article.about {float: none;margin: 0 0 20px;}}
