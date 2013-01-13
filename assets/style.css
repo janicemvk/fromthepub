@@ -95,4 +95,6 @@ footer p {
 }
 
 /* 320-pixel layout for iPhone-sized screens */
-@media (max-width: 320px) {article.episode {width: 320px;margin: 0 0 18px;clear: both;}header h1 {font-size: 60px;}aside {float: none;}}
+@media (max-width: 320px) {article.episode {width: 319px;margin: 0 0 18px;clear: both;
+		color: #0bee1a;
+	}header h1 {font-size: 60px;}aside {float: none;}}
