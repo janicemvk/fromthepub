@@ -55,27 +55,28 @@ nav a {color: rgba(105, 105, 105, 0.41);}
 nav a:visited {color: rgba(105, 105, 105, 0.41);}
 nav a:hover {color: rgb(105, 105, 105);}
 
-section.page {max-width: 900px;margin: 0 auto;padding: 10px;}
-section.page h1 {font: 50px/50px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 0 0 30px;}
+aside {max-width: 350px;float: right;margin: -30px 0 30px;}
 
-article.about {max-width: 350px;float: right;margin: 0;}
+section.page {max-width: 900px;margin: 0 auto;padding: 0 10px;}
+section.page h1 {font: 50px/50px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 0 0 15px;}
+section.page h2 {font: 30px/30px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 40px 0 15px;}
+section.page p {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;}
 
-article.episode {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 20px 0 0;}
-article.episode h1 {font: 30px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;padding: 5px 0;}
-article.about h1 {font: 30px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;padding: 5px 0;}
+section.page ul {margin: -10px 0 20px;}
+section.page li {list-style: disc;margin: 0 0 0 30px;}
+section.page a {text-decoration: none;color: #f69013;}
+section.page a:visited {text-decoration: none;}
+section.page a:hover {text-decoration: none;color: #f68512;-webkit-transition: color .25s}
+section.page img {max-width: 100%;margin: 0 auto;padding: 0 10px;}
 
-article.page {max-width: 900px;margin: 0 auto;padding: 0 10px;}
-article.page h1 {font: 50px/50px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 0 0 15px;}
-article.page h2 {font: 30px/30px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 40px 0 15px;}
-article.page p, article.about p {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 10px;}
-article.page ul {margin: -10px 0 20px;}
-article.page li {list-style: disc;margin: 0 0 0 30px;}
-article.page a {text-decoration: none;color: #f69013;}
-article.page a:visited {text-decoration: none;}
-article.page a:hover {text-decoration: none;color: #f68512;-webkit-transition: color .25s}
+article.episode {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 30px 0 0;}
+article.episode h1 {font: 40px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;padding: 0;
+margin: 0;}
+article.episode a {text-decoration: none;color: #333;}
+article.episode a:visited {text-decoration: none;}
+article.episode a:hover {text-decoration: none;color: #f68512;-webkit-transition: color .25s}
 
-article.page img {max-width: 100%;margin: 0 auto;padding: 0 10px;}
-article p.meta {font-size: 10px;display: inline;}
+p.meta {font-size: 13px;display: inline;}
 
 footer {
 	border-style: solid;
@@ -96,4 +97,4 @@ footer p {
 }
 
 /* 320-pixel layout for iPhone-sized screens */
-@media (max-width: 320px) {article.episode {width: 320px;margin: 0 0 18px;clear: both;}header h1 {font-size: 60px;}article.about {float: none;margin: 0 0 20px;}}
+@media (max-width: 320px) {article.episode {width: 320px;margin: 0 0 18px;clear: both;}header h1 {font-size: 60px;}aside {float: none;}}

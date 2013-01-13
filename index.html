@@ -4,16 +4,16 @@ title: Home
 ---
 <section class="page">
 
-<article class="about">
-<h1>About The Podcast</h1>
+<aside>
+<h2>About The Podcast</h2>
 <p>Darren Scott and Adam Wilcox discuss the things men talk about in the pub- news, films, computer games, Nazi Zombies, women and other aliens.</p>
-</article>
+</aside>
 
 {% for post in site.posts limit:5 %}
 
 <article class="episode">
 <h1><a href="http://www.fromthepub.com{{ post.url }}" rel="bookmark" title="Permanent Link to {{ post.title }}">{{post.title}}</a></h1>
-<p><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> • <a href="{{ post.link }}" rel="bookmark" title="Download {{ post.title }}">Download</a> • <a href="https://itunes.apple.com/gb/podcast/from-the-pub-podcast/id336250525?mt=2">Subscribe in iTunes</a></p>
+<p class="meta"><time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> • <a href="{{ post.link }}" rel="bookmark" title="Download {{ post.title }}">Download</a> • <a href="https://itunes.apple.com/gb/podcast/from-the-pub-podcast/id336250525?mt=2">Subscribe in iTunes</a></p>
 </article>
 
 {% endfor %}
