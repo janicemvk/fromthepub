@@ -1,3 +1,5 @@
+/* Last Update: 2013-01-13 11:45*/
+
 @font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
 
 /* @group css reset v2.0 */
@@ -53,12 +55,12 @@ nav a {color: rgba(105, 105, 105, 0.41);}
 nav a:visited {color: rgba(105, 105, 105, 0.41);}
 nav a:hover {color: rgb(105, 105, 105);}
 
-section.homepage {max-width: 900px;margin: 0 auto;}
+section.homepage {max-width: 900px;margin: 0 auto;padding: 10px;}
 section.homepage h1 {font: 50px/50px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
-article.about {max-width: 350px;float: right;margin: 0 10px 0 0;}
+article.about {max-width: 350px;float: right;margin: 0;}
 
-article.episode {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 20px 0 0 30px;}
+article.episode {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 20px 0 0;}
 article.episode h1 {font: 30px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;padding: 5px 0;}
 article.about h1 {font: 30px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;padding: 5px 0;}
 
@@ -94,4 +96,4 @@ footer p {
 }
 
 /* 320-pixel layout for iPhone-sized screens */
-@media (max-width: 320px) {article.episode {width: 320px;margin: 0 0 18px 18px;clear: both;}header h1 {font-size: 60px;}}
+@media (max-width: 320px) {article.episode {width: 320px;margin: 0 0 18px;clear: both;}header h1 {font-size: 60px;}article.about {float: none;}}
