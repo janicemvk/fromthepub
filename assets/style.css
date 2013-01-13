@@ -1,4 +1,4 @@
-/* Last Update: 2013-01-13 12:53*/
+/* Last Update: 2013-01-13 13:10*/
 
 @font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
 
@@ -62,7 +62,7 @@ section.page h1 {font: 50px/50px leaguegothic, "Helvetica Neue", Helvetica, Aria
 section.page h2 {font: 30px/30px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 40px 0 15px;}
 section.page p {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 10px 0;}
 
-section.page ul {margin: -10px 0 20px;}
+section.page ul {margin: -10px 0 20px;font: 15px/25px "Helvetica Neue", Helvetica, Arial, sans-serif;}
 section.page li {list-style: disc;margin: 0 0 0 30px;}
 section.page a {text-decoration: none;color: #f69013;}
 section.page a:visited {text-decoration: none;}
