@@ -1,0 +1,15 @@
+{% include header.html %}
+
+<section class="page">
+
+<aside>
+<h2>Download Episode</h2>
+<p><a href="{{ page.link }}" rel="bookmark" title="Download {{ page.title }}">Download</a></p>
+<p><a href="https://itunes.apple.com/gb/podcast/from-the-pub-podcast/id336250525?mt=2">Subscribe in iTunes</a></p>
+</aside>
+
+<h1>{{ page.title }}</h1>
+{{ content }}
+</section>
+
+{% include footer.html %}
