@@ -1,6 +1,6 @@
 /* Last Update: 2013-02-08 14:35:00 */
 
-@font-face { font-family: leaguegothic; src: url('!leaguegothic-regular-webfont.woff'); }
+@font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
 
 /* @group css reset v2.0 */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,details,embed,figure,figcaption,footer,header,hgroup,nav,output,section,summary,time,audio,video{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
@@ -8,7 +8,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 /* fromthepub.com CSS */
 
-body {max-width: 1200px;color: #333; -webkit-font-smoothing: antialiased;font: 16px/1.5 leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: auto;padding: 0;display: none;}
+body {max-width: 1200px;color: #333; -webkit-font-smoothing: antialiased;font: 16px/1.5 leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: auto;padding: 0;}
 
 a {text-decoration: none;color: #3a3c44;}
 a:visited {text-decoration: none;}
