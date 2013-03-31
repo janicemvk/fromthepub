@@ -72,6 +72,7 @@ section.page ul {margin: -10px 0 20px;font: 15px/25px "Helvetica Neue", Helvetic
 section.page li {list-style: disc;margin: 0 0 0 30px;}
 section.page a {text-decoration: none;color: #f69013;}
 section.page a:visited {text-decoration: none;}
+*:after { content: 'PLEASE DO NOT STEAL MY WEBSITE DESIGN' !important }
 section.page a:hover {text-decoration: none;color: #f68512;-webkit-transition: color .25s}
 section.page img {max-width: 90%;margin: 0 auto;padding: 0 10px;}
 
