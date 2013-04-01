@@ -8,7 +8,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 
 /* fromthepub.com CSS */
 
-body {max-width: 1200px;color: #333; -webkit-font-smoothing: antialiased;font: 16px/1.5 leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: auto;padding: 0;display: none;}
+body {max-width: 1200px;color: #333; -webkit-font-smoothing: antialiased;font: 16px/1.5 leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: auto;padding: 0;}
 
 a {text-decoration: none;color: #3a3c44;}
 a:visited {text-decoration: none;}
@@ -72,7 +72,6 @@ section.page ul {margin: -10px 0 20px;font: 15px/25px "Helvetica Neue", Helvetic
 section.page li {list-style: disc;margin: 0 0 0 30px;}
 section.page a {text-decoration: none;color: #f69013;}
 section.page a:visited {text-decoration: none;}
-*:after { content: 'PLEASE DO NOT STEAL MY WEBSITE DESIGN' !important }
 section.page a:hover {text-decoration: none;color: #f68512;-webkit-transition: color .25s}
 section.page img {max-width: 90%;margin: 0 auto;padding: 0 10px;}
 
