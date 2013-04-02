@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: default
 title: About the Podcast
 ---
+
+# About the Podcast
 
 From The Pub is a free podcast from Darren Scott and Adam Wilcox. Each episode we discuss some of those really pressing issues of the day, the stuff that is on everyone's mind. The answers we're all seeking, the questions we're all asking.
 

@@ -1,11 +1,7 @@
 {% include header.html %}
 
-<section class="page">
-
-<aside>
-<h2>Episode Archive</h2>
-<p>Complete archives for the From The Pub podcast.</p>
-</aside>
+<div class="page">
+<div class="col-7-12">
 
 {{ content }}
 
@@ -20,6 +16,13 @@
 {% endunless %}
 {% endfor %}
 
-</section>
+</div>
+   
+<div class="col-5-12">
+<h2>Episode Archive</h2>
+<p>Complete archives for the From The Pub podcast.</p>
+</div>
+
+</div>
 
 {% include footer.html %}
