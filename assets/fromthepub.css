@@ -2,7 +2,7 @@
 From The Pub CSS
 Copyright (c) 2013 adamwilcox.org All rights reserved.
 http://log.adamwilcox.org
-Last Update: 2013-04-01 21:13:44
+Last Update: 2013-04-02 10:50:26
 */
 
 @font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
@@ -100,7 +100,7 @@ footer {
 	margin: 100px auto 40px;
 }
 
-footer p {
+footer p,small {
 	display: inline;
 	padding: 0 10px;
 	font: 12px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
