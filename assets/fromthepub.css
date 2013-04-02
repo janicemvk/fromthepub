@@ -2,7 +2,7 @@
 From The Pub CSS
 Copyright (c) 2013 adamwilcox.org All rights reserved.
 http://log.adamwilcox.org
-Last Update: 2013-04-02 10:50:26
+Last Update: 2013-04-02 12:45:52
 */
 
 @font-face { font-family: leaguegothic; src: url('leaguegothic-regular-webfont.woff'); }
@@ -15,7 +15,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 *, *:after, *:before {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}body {margin: 0px;}[class*='col-'] {float: left;padding-right: 20px;}[class*='col-']:last-of-type {padding-right: 0px;}.grid {width: 100%;max-width: 1140px;min-width: 755px;margin: 0 auto;overflow: hidden;}.grid:after {content: "";display: table;clear: both;}.grid-pad {padding: 20px 20px 0px;}.grid-pad > [class*='col-']:last-of-type {padding-right: 20px;}.push-right {float: right;}
 /* Content Columns */
 .col-1-1 {width: 100%;}
-.col-5-12 {width: 41.66%;}
+.col-5-12 {width: 41.66%;padding-left: 10px;}
 .col-7-12 {width: 58.33%}
 
 /* fromthepub.com CSS */
