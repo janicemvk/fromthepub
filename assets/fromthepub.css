@@ -11,12 +11,13 @@ Last Update: 2013-04-02 12:45:52
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,details,embed,figure,figcaption,footer,header,nav,section,time{border:0;font:inherit;font-size:100%;margin:0;padding:0;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 /* @end */
 
-/* Simple Grid */
+/* @group Simple Grid */
 *, *:after, *:before {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}body {margin: 0px;}[class*='col-'] {float: left;padding-right: 20px;}[class*='col-']:last-of-type {padding-right: 0px;}.grid {width: 100%;max-width: 1140px;min-width: 755px;margin: 0 auto;overflow: hidden;}.grid:after {content: "";display: table;clear: both;}.grid-pad {padding: 20px 20px 0px;}.grid-pad > [class*='col-']:last-of-type {padding-right: 20px;}.push-right {float: right;}
 /* Content Columns */
-.col-1-1 {width: 100%;}
-.col-5-12 {width: 41.66%;padding-left: 10px;}
-.col-7-12 {width: 58.33%}
+.col-1-1 {width: 100%;}.col-5-12 {width: 41.66%;padding-left: 10px;}.col-7-12 {width: 58.33%}
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {.grid {width: 100%;min-width: 0;margin-left: 0px;margin-right: 0px;padding-left: 0px;padding-right: 0px;}[class*='col-'] {width: auto;float: none;padding-left: 20px;padding-right: 20px;margin: 10px 0 10px 0px;}}
+/* @end */
 
 /* fromthepub.com CSS */
 
@@ -53,7 +54,6 @@ nav {
 	border-top-width: 1px;
 	border-bottom-color: rgba(105, 105, 105, 0.41);
 	border-top-color: rgba(105, 105, 105, 0.41);
-	max-width: 900px;
 	text-align: center;
 	padding: 10px 0;
 	margin: 0 auto 35px;
@@ -70,11 +70,8 @@ nav a {color: rgba(105, 105, 105, 0.41);}
 nav a:visited {color: rgba(105, 105, 105, 0.41);}
 nav a:hover {color: rgb(105, 105, 105);}
 
-.page {max-width: 900px;margin: 0 auto;padding: 0 10px;}
 .page h1 {font: 50px/50px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 0 0 15px;}
-.page h2 {font: 30px/30px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;
-margin: 0 0 15px;
-}
+.page h2 {font: 30px/30px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;margin: 0 0 15px;}
 .page p {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 0 0 15px;}
 
 .page ul {margin: -10px 0 20px;font: 15px/25px "Helvetica Neue", Helvetica, Arial, sans-serif;}
@@ -86,8 +83,8 @@ margin: 0 0 15px;
 
 article.episode {font: 15px/20px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;margin: 0 0 30px;
 max-width: 850px}
-article.episode h1 {font: 40px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;padding: 0;
-margin: 0;}
+article.episode h1 {font: 40px leaguegothic, "Helvetica Neue", Helvetica, Arial, sans-serif;padding: 0;margin: 0;}
+article h2 {padding: 20px 0 0;}
 article.episode a {text-decoration: none;color: #333;}
 article.episode a:visited {text-decoration: none;}
 article.episode a:hover {text-decoration: none;color: #f68512;-webkit-transition: color .25s}
@@ -101,7 +98,6 @@ footer {
 	text-align: center;
 	padding: 10px 0;
 	margin: 70px auto 20px;
-	max-width: 900px;
 }
 
 footer p,small {
@@ -109,9 +105,6 @@ footer p,small {
 	padding: 0 10px;
 	font: 12px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-
-/* Simple Grid Mobile */
-@media handheld, only screen and (max-width: 767px) {.grid {width: 100%;min-width: 0;margin-left: 0px;margin-right: 0px;padding-left: 0px;padding-right: 0px;}[class*='col-'] {width: auto;float: none;padding-left: 20px;padding-right: 20px;margin: 10px 0 10px 0px;}}
 
 /* 320-pixel layout for iPhone-sized screens */
 @media (max-width: 320px) {
