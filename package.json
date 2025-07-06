@@ -6,7 +6,11 @@
   "scripts": {
     "compile": "npx hardhat compile",
     "test": "npx hardhat test",
-    "deploy": "npx hardhat run scripts/deploy.js --network hardhat"
+    "deploy": "npx hardhat run scripts/deploy.js --network hardhat",
+    "bot:help": "node trading-bot/run-bot.js help",
+    "bot:test": "node trading-bot/run-bot.js test",
+    "bot:simulate": "node trading-bot/run-bot.js simulate",
+    "bot:start": "node trading-bot/run-bot.js start"
   },
   "keywords": [
     "uniswap",
@@ -23,6 +27,8 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.0",
     "@uniswap/v3-core": "^1.0.1",
-    "@uniswap/v3-periphery": "^1.4.3"
+    "@uniswap/v3-periphery": "^1.4.3",
+    "node-cron": "^3.0.2",
+    "dotenv": "^16.3.1"
   }
 }
