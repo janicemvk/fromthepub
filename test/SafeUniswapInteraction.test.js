@@ -8,7 +8,7 @@ describe("SafeUniswapInteraction", function () {
   
   // Common token addresses on mainnet
   const WETH = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
-  const USDC = "0xA0b86a33E6417e8b1321A8F5B26f9A7F36ab1986";
+  const USDC = "0xA0b86a33E6417e8b1321A8F5B26f9A7F36Ab1986";
   const WBTC = "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599";
   
   beforeEach(async function () {

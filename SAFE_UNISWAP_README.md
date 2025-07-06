@@ -55,7 +55,7 @@ The `SafeUniswapInteraction` contract provides:
 // Get WETH/USDC price from 0.3% fee pool
 const price = await contract.checkPrice(
   "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // WETH
-  "0xA0b86a33E6417e8b1321A8F5B26f9A7F36ab1986", // USDC
+  "0xA0b86a33E6417e8b1321A8F5B26f9A7F36Ab1986", // USDC
   3000 // 0.3% fee
 );
 ```

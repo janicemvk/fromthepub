@@ -24,7 +24,7 @@ contract SafeUniswapInteraction is Ownable, ReentrancyGuard {
     
     // Common token addresses (mainnet)
     address public constant WETH = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
-    address public constant USDC = 0xA0b86a33E6417e8b1321A8F5B26f9A7F36ab1986;
+    address public constant USDC = 0xA0b86a33E6417e8b1321A8F5B26f9A7F36Ab1986;
     
     event SwapExecuted(
         address indexed tokenIn,
