@@ -1,0 +1,28 @@
+{
+  "name": "safe-uniswap-interaction",
+  "version": "1.0.0",
+  "description": "Educational contract demonstrating safe Uniswap V3 interaction",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js --network hardhat"
+  },
+  "keywords": [
+    "uniswap",
+    "defi",
+    "educational",
+    "solidity"
+  ],
+  "author": "Educational",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "@uniswap/v3-core": "^1.0.1",
+    "@uniswap/v3-periphery": "^1.4.3"
+  }
+}
