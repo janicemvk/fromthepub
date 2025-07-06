@@ -55,7 +55,7 @@ The `SafeUniswapInteraction` contract provides:
 // Get WETH/USDC price from 0.3% fee pool
 const price = await contract.checkPrice(
   "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // WETH
-  "0xA0b86a33E6417e8b1321A8F5B26f9A7F36Ab1986", // USDC
+  "0xA0b86a33E6417e8b1321A8F5b26f9A7F36Ab1986", // USDC
   3000 // 0.3% fee
 );
 ```
@@ -66,7 +66,7 @@ const price = await contract.checkPrice(
 // Execute WETH to USDC swap (owner only)
 await contract.executeSwap(
   "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // WETH
-  "0xA0b86a33E6417e8b1321A8F5B26f9A7F36ab1986", // USDC
+  "0xA0b86a33E6417e8b1321A8F5b26f9A7F36Ab1986", // USDC
   ethers.utils.parseEther("1"), // 1 WETH
   1000000, // Min 1 USDC out
   3000 // 0.3% fee
@@ -79,7 +79,7 @@ await contract.executeSwap(
 // Check price difference between 0.3% and 1% fee pools
 const [exists, priceDiff] = await contract.checkArbitrageOpportunity(
   "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // WETH
-  "0xA0b86a33E6417e8b1321A8F5B26f9A7F36ab1986", // USDC
+  "0xA0b86a33E6417e8b1321A8F5b26f9A7F36Ab1986", // USDC
   3000, // 0.3% fee
   10000 // 1% fee
 );

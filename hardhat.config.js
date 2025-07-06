@@ -13,11 +13,11 @@ module.exports = {
   },
   networks: {
     hardhat: {
-      forking: {
-        // Fork from mainnet to test with real Uniswap contracts
-        url: "https://eth-mainnet.alchemyapi.io/v2/YOUR_ALCHEMY_KEY",
-        blockNumber: 18000000 // Use a specific block for consistency
-      }
+      // Uncomment below to fork from mainnet (requires valid Alchemy API key)
+      // forking: {
+      //   url: "https://eth-mainnet.alchemyapi.io/v2/YOUR_ALCHEMY_KEY",
+      //   blockNumber: 18000000
+      // }
     }
   }
 };

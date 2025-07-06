@@ -8,7 +8,7 @@ describe("SafeUniswapInteraction", function () {
   
   // Common token addresses on mainnet
   const WETH = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
-  const USDC = "0xA0b86a33E6417e8b1321A8F5B26f9A7F36Ab1986";
+  const USDC = "0xA0b86a33E6417e8b1321A8F5b26f9A7F36Ab1986";
   const WBTC = "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599";
   
   beforeEach(async function () {
@@ -16,7 +16,7 @@ describe("SafeUniswapInteraction", function () {
     
     const SafeUniswapInteraction = await ethers.getContractFactory("SafeUniswapInteraction");
     contract = await SafeUniswapInteraction.deploy();
-    await contract.deployed();
+    await contract.waitForDeployment();
   });
 
   describe("Deployment", function () {
@@ -89,11 +89,11 @@ describe("SafeUniswapInteraction", function () {
     it("Should allow owner to withdraw ETH", async function () {
       // Send some ETH to the contract
       await owner.sendTransaction({
-        to: contract.address,
-        value: ethers.utils.parseEther("1")
+        to: await contract.getAddress(),
+        value: ethers.parseEther("1")
       });
       
-      const initialBalance = await owner.getBalance();
+      const initialBalance = await ethers.provider.getBalance(owner.address);
       
       // Owner should be able to withdraw
       await expect(contract.withdrawETH()).to.not.be.reverted;
@@ -117,13 +117,13 @@ describe("SafeUniswapInteraction", function () {
       // Should be able to receive ETH
       await expect(
         owner.sendTransaction({
-          to: contract.address,
-          value: ethers.utils.parseEther("1")
+          to: await contract.getAddress(),
+          value: ethers.parseEther("1")
         })
       ).to.not.be.reverted;
       
-      const balance = await ethers.provider.getBalance(contract.address);
-      expect(balance).to.equal(ethers.utils.parseEther("1"));
+      const balance = await ethers.provider.getBalance(await contract.getAddress());
+      expect(balance).to.equal(ethers.parseEther("1"));
     });
 
     it("Should validate swap parameters", async function () {
